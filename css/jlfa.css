@@ -1,0 +1,55 @@
+.navbar-nav>li>a					{padding-top:0px; padding-bottom:0px;}
+.navbar-nav							{padding-top:25px; padding-bottom:15px;}
+@media (min-width: 768px)
+.navbar-header {
+    float: left;
+	
+}
+
+h2.fontcolor {
+	color: blue;
+}
+p.fontcolor {
+	color: red;
+}
+ul::after{
+	content:none;
+}
+ul::before{
+	content:none;
+}
+
+li::before{
+	content:none;
+}
+a::before{
+	content:none;
+}
+.about-left{
+	
+	margin-top: 125px;
+	margin-bottom: 70px;
+}
+
+.about_title{
+	
+	margin-top: 100px;
+	margin-bottom: 10px;
+
+}
+
+#contactView .skewed {
+  background-color: #AAAAAA;
+  transform: matrix(1, 0.1, 0, 1, 0, -50); 
+  
+  }
+
+#contactView .backgroundBg {
+  background-color: transparent !important; }
+
+#contactThanks {
+  display: none;
+  text-align: center; 
+  
+  }
+
