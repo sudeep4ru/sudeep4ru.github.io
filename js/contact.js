@@ -27,7 +27,6 @@ var Contact = function () {
 			xhttp.onreadystatechange = function () {
 				if (xhttp.readyState == 4 && xhttp.status == 200) {
 					document.getElementById('contactForm').style.display = 'none';
-					document.getElementById('contactForm1').style.display = 'none';
 					document.getElementById("contactThanks").style.display = 'block';
 				}
 			};
@@ -39,7 +38,7 @@ var Contact = function () {
 				'name': formElements.name.value,
 				'_replyto': formElements._replyto.value,
 				'_subject': formElements.subject.value,
-				
+				'_phone': formElements.phone.value,
 				'message': formElements.message.value
 			}));
 		}

@@ -14,6 +14,36 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*Header*/
+
+@keyframes slidy {
+0% { left: 0%; }
+ 20% { left: 0%; }
+25% { left: -120%; }
+45% { left: -120%; }
+50% { left: -240%; }
+70% { left: -240%; }
+75% { left: -360%; }
+95% { left: -360%; }
+100% { left: -360%; } 
+}
+
+/* body { margin: 0; }  */
+/* div#slider { overflow: hidden; } */
+div#slider figure img { width: 24%; float:left; height:550px; margin-top:1.5% }
+div#slider figure { 
+  position: relative; 
+  width: 500%;
+
+  margin-left: -111px;
+ 
+  
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+
+
 .navbar-default .navbar-nav>li>a {
 color: #777;
 text-transform: uppercase;
@@ -21,12 +51,15 @@ text-transform: uppercase;
 .navbar-default .navbar-nav>li>a:hover{
 	color: #f74d65;
 }
-header{
-	background: url(../images/lic1.jpg);
-	background-size: cover;
+/* header{
+	background: url(../images/home_4.jpg);
+	margin-top:50px;
+	
+	background-size:cover;
 	background-repeat: no-repeat;
-}
-.section_overlay{
+	background-position: center;
+}  
+.sect */ion_overlay{
 	background: rgba(250,250,250, .5);
 }
 .home_text{

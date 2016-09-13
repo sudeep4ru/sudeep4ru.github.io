@@ -1,6 +1,4 @@
 'use strict';
-
-
 var contact = new Contact('contactForm');
 var contactForm = document.getElementById("contactForm");
 console.log('form submission started');
