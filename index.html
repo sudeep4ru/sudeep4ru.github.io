@@ -14,14 +14,13 @@
     <!-- Font Awesome -->
 
 
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-	<!-- <link href="http://font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
      <!-- Preloader -->
     <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen, print"/>
 
     <!-- Icon Font-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <!-- Animate CSS-->
@@ -29,7 +28,6 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	
 
 
 
@@ -39,7 +37,8 @@
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
 	<link href="css/jlfa.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" >
+	 <link href="css/full-slider.css" rel="stylesheet">
+	
 	<meta name="referrer" content="origin">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,10 +64,10 @@
 
 
 
-    <header id="HOME" >
-	        <div class="section_overlay">
+    <header id="HOME" class="carousel slide" data-ride="carousel">
+	        
 	            <nav class="navbar navbar-default navbar-fixed-top">
-	              <div class="container">
+	              <div class="container"> 
 	                <!-- Brand and toggle get grouped for better mobile display -->
 	                <div class="navbar-header">
 	                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -83,7 +82,7 @@
 
 	                <!-- Collect the nav links, forms, and other content for toggling -->
 	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	                  <ul class="nav navbar-nav navbar-right">
+	                  <ul class="nav navbar-nav navbar-right" style="padding-right:20px">
 
 						<li><a href="#HOME">HOME</a></li>
 	                    <li><a href="#BENEFITS">Benefits</a></li>
@@ -95,38 +94,99 @@
 	                    <li><a href="#CONTACT">Contact</a></li>
 	                  </ul>
 	                </div><!-- /.navbar-collapse -->
-	              </div><!-- /.container -->
+	              </div> <!-- /.container -->
 	            </nav> 
+		
+			
+				 <!-- Indicators -->
 				
-	            <div class="container">
+	                
+					<ol class="carousel-indicators">
+						<li data-target="#HOME" data-slide-to="0" class="active"></li>
+						<li data-target="#HOME" data-slide-to="1"></li>
+						<li data-target="#HOME" data-slide-to="2"></li>
+						<li data-target="#HOME" data-slide-to="3"></li>
+					</ol>
+
+					<!-- Wrapper for Slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<!-- Set the first background image using inline CSS below. -->
+							<div class="fill" style="background-image:url('images/home_4.JPG'); background-size:100% 90%; background-repeat: no-repeat;background-position: 0px 85px;"></div>
+							
+						   
+						</div>
+						<div class="item">
+							<!-- Set the second background image using inline CSS below. -->
+							<div class="fill" style="background-image:url('images/home_3.JPG'); background-size:100% 90%; background-repeat: no-repeat;background-position: 0px 85px;"></div>
+						
+						</div>
+						<div class="item">
+							<!-- Set the third background image using inline CSS below. -->
+							<div class="fill" style="background-image:url('images/home_2.JPG'); background-size:100% 87%; background-repeat: no-repeat;background-position: 0px 85px;"></div>
+							
+						</div>
+						<div class="item">
+							<!-- Set the third background image using inline CSS below. -->
+							<div class="fill" style="background-image:url('images/home_1.JPG'); background-size:100% 90%; background-repeat: no-repeat;background-position: 0px 85px;"></div>
+						</div>
+					</div>
+
+					 <!-- Controls -->
+					 <a class="left carousel-control" href="#HOME" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+					<a class="right carousel-control" href="#HOME" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+					 
+					 
+					<!-- <a class="left carousel-control" href="#HOME" role="button" data-slide="prev">
+
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+						
+					</a>
+					<a class="right carousel-control" href="#HOME"  role="button" data-slide="next">
+					
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>  -->
+				
+	           
+	            <!-- <div class="container">
 	                <div class="row">
 					
 	                    <div class="col-md-12 text-center">
 	                        <div id="slider">
 								<figure>
-									<img src="images/home_4.JPG" alt>
-									<img src="images/home_3.JPG" alt>
-									<img src="images/home_2.JPG" alt>
-									<img src="images/home_1.JPG" alt>
+									<img src="./images/home_4.jpg"  alt>
+									<img src="./images/home_3.jpg"  alt>
+									<img src="./images/home_2.jpg" alt>
+									<img src="./images/home_1.jpg" alt>
 									
 								</figure>
 							</div>
-						</div>
+						<!-- 	<div class="scroll_down">
+                            <a href="#BENEFITS"><img src="images/scroll.png" alt=""></a>
+	                            <h4>Scroll Down</h4>
+	                        </div> -->
+<!-- 	                    </div>
 	                </div>
 	            </div>
 
 	            <div class="container">
 	                <div class="row">
 	                    <div class="col-md-12 text-center">
-	                        <div class="scroll_down">
+	                        <div class="scroll_down"> -->
                            <!--  <a href="#BENEFITS"><img src="images/scroll.png" alt=""></a>
 	                            <h4>Scroll Down</h4>
 	                        </div> -->
-	                    </div>
-	                </div>
-	            </div>            
-	        </div>  
-	    </section>         
+	                 <!--    </div>
+	                </div> -->
+	            <!-- </div> -->            
+	        
+	          
     </header>
 
 
@@ -531,18 +591,16 @@
 					</div>
 			
                 </div>
-				
+				<div class="col-md-5 text-center">
+					<div class="video-container">
+								<iframe width="320" height="200" frameborder="0" src="http://www.youtube.com/embed/s47pdfAfYAo?wmode=opaque&fs=1"  webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+					</div>
+				</div>
 				<div class="col-md-5 text-center">
 					<div class="video-container">
 						<iframe width="320" height="200" src="https://www.youtube.com/embed/UuemVjyftZU" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
-				<div class="col-md-5 text-center">
-					<div class="video-container">
-						<iframe width="320" height="200" src="https://www.youtube.com/embed/s47pdfAfYAo" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-				
 				
 			</div>
         </div>
@@ -552,9 +610,9 @@
                     <div class="social">
                         <h2>Follow Me on Here</h2>
                         <ul class="icon_list">
-                            <li><a href="https://www.facebook.com/alokkumar.jaiswal.165"target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href=""target="_blank"><i class="fa fa-twitter"></i></a></li>
-                           <!--  <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <!-- <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                             <li><a href=""><i class="fa fa-linkedin"></i></a></li> -->
                             
                         </ul>
@@ -581,14 +639,35 @@
 ============================== -->
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <!--   <script src="js/jquery.min.js"></script> -->
+	<script src="js/jquery.js"></script>
     <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
 	<script src="js/contact.js"></script>
 	<script src="js/index.js"></script>
+	<script>
+		$('.carousel').carousel({
+			interval: 5000 //changes the speed
+		});
+		$('.carousel-control.left').click(function() {
+			  $('#HOME').carousel('prev');
+		});
+
+		$('.carousel-control.right').click(function() {
+		  $('#HOME').carousel('next');
+		});
+		
+		$('a[data-slide="prev"]').click(function() {
+		  $('#HOME').carousel('prev');
+		});
+
+		$('a[data-slide="next"]').click(function() {
+		  $('#HOME').carousel('next');
+		});
+    </script>
 
 
 
